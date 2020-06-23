@@ -1,0 +1,35 @@
+<div class="jumbotron text-center">
+    <h2>Produtos disponíveis para coleta</h2>
+</div>
+
+<div class="container">
+
+    <div class="row">
+        {{#data}}
+            <div class="col-md-4 my-2">
+                <div class="card shadow">
+                    <div class="card-header bg-info text-white">
+                        <h3>#{{id}} {{name}}</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            <strong>Data de Vencimento: </strong>
+                            {{date}}
+                        </p>
+                        <p>
+                            <strong>Local de Coleta: </strong>
+                            {{place}}
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Coletar</button>
+                    </div>
+                </div>
+            </div>
+        {{/data}}
+    </div>
+
+</div>
+  
+{{!-- <a href="/deletar/{{id}}" id="deletar">DEL</a>
+<a href="/atualizar/{{id}}">UPDT</a> --}}
